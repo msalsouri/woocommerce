@@ -141,7 +141,9 @@ test.describe(
 			await page.goto( cartBlockPage.slug );
 
 			// Set shipping country to Netherlands
-			await page.getByLabel( 'Add an address for shipping' ).click();
+			await page
+				.getByLabel( 'Enter address to check delivery options' )
+				.click();
 			await page
 				.getByRole( 'combobox' )
 				.first()
@@ -173,7 +175,9 @@ test.describe(
 			await page.goto( cartBlockPage.slug );
 
 			// Set shipping country to Portugal
-			await page.getByLabel( 'Add an address for shipping' ).click();
+			await page
+				.getByLabel( 'Enter address to check delivery options' )
+				.click();
 			await page
 				.getByRole( 'combobox' )
 				.first()
@@ -212,7 +216,9 @@ test.describe(
 			await page.goto( cartBlockPage.slug );
 
 			// Set shipping country to Portugal
-			await page.getByLabel( 'Add an address for shipping' ).click();
+			await page
+				.getByLabel( 'Enter address to check delivery options' )
+				.click();
 			await page
 				.getByRole( 'combobox' )
 				.first()
@@ -246,7 +252,9 @@ test.describe(
 			await page.goto( cartBlockPage.slug );
 
 			// Set shipping country to Portugal
-			await page.getByLabel( 'Add an address for shipping' ).click();
+			await page
+				.getByLabel( 'Enter address to check delivery options' )
+				.click();
 			await page
 				.getByRole( 'combobox' )
 				.first()
