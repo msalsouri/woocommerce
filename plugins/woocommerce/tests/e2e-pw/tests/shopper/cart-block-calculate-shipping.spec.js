@@ -190,7 +190,7 @@ test.describe(
 			await expect(
 				page.getByRole( 'group' ).getByText( 'Flat rate' )
 			).toBeVisible();
-			await expect( page.getByText( 'Shipping$5.00Flat' ) ).toBeVisible();
+			await expect( page.getByText( 'Delivery$5.00Flat' ) ).toBeVisible();
 			await expect(
 				page.getByText( `$${ firstProductWithFlatRate }` )
 			).toBeVisible();
@@ -267,7 +267,7 @@ test.describe(
 			await expect(
 				page.getByRole( 'group' ).getByText( 'Flat rate' )
 			).toBeVisible();
-			await expect( page.getByText( 'Shipping$5.00Flat' ) ).toBeVisible();
+			await expect( page.getByText( 'Delivery$5.00Flat' ) ).toBeVisible();
 			await expect(
 				page.getByText(
 					`$${
